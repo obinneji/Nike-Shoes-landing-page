@@ -1,24 +1,17 @@
-import Hero from './sections/Hero'
-import CustomerReviews from './sections/CustomerReviews'
-import PopularProducts from './sections/PopularProducts'
-import SpecialOffer from './sections/SpecialOfffer'
-import Services from './sections/Services'
-import SuperQuality from './sections/SuperQuality'
-import Footer from './sections/Footer'
-import Subscribe from './sections/Subscribe'
-import Nav from './components/Nav'
+
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Nav from "./components/Nav";
 
 const App = () => (
-  <main className="relative">
-    <Nav/>
-    <section className="xl:padding-l  wide:padding-r padding-b"><Hero/></section>
-    <section className="padding"><PopularProducts/></section>
-    <section className="padding"><SuperQuality/></section>
-    <section className="padding-  py-10 "><Services/></section>
-    <section className="padding"><SpecialOffer/></section>
-    <section className="bg-pale-blue"><CustomerReviews/></section>
-    <section className="padding-x sm:py-32 py-16 w-full"><Subscribe/></section>
-    <section className="bg-black padding-x padding-t pb-8"><Footer/></section>
-  </main>
+  <>
+  <Nav/>
+  <Routes>
+    
+    <Route path="/" element={<Home />} />
+    <Route path="/products" element={<Products/>} />
+  </Routes>
+  </>
 );
 export default App;

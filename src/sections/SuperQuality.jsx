@@ -4,13 +4,13 @@ function SuperQuality() {
   return (
     <section
       id="about-us"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container  "
+      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <div className="flex flex-col">
         <h2 className="mt-10 font-palanquin capitalize lg:max-w-lg text-4xl font-bold">
           We Provide You
-          <span className="text-coral-red">Super</span>
-          <span className="text-coral-red">Quality</span>
+          <span className="text-coral-red"> Super</span>
+          <span className="text-coral-red"> Quality</span>
         </h2>
         <p className="info-text mt-4 lg:max-w-lg ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque qui
